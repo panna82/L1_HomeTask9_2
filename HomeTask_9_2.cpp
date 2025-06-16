@@ -8,9 +8,6 @@ void swap_metod(int* a, int* b)
     *a = *a + *b;
     *b = *a - *b;
     *a = *a - *b;
-
-    std::cout << "a = " << *a << ", ";
-    std::cout << "b = " << *b << std::endl;
 }
 
 
@@ -25,4 +22,7 @@ int main()
     std::cout << "b = " << b << std::endl;
 
     swap_metod(&a, &b);
+
+    std::cout << "a = " << a << ", ";
+    std::cout << "b = " << b << std::endl;
 }
